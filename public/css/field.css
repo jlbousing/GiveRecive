@@ -1,0 +1,31 @@
+body{
+    background-color: #01A9DB;
+}
+
+#inputText{
+
+    height: 45px;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+
+}
+
+.container{
+    text-align: center;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.jumbotron{
+    margin-top: 50px;
+    align-content: center;
+    width: auto;
+}
+
+select{
+    border-radius: 100px;
+}

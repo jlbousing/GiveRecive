@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html data-ng-app="App">
+    <head>
+        <title>GiveRecive</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+    </head>
+    <body data-ng-controller="grController">
+        
+        <nav class="navbar navbar-default" role="navigation">
+  <!-- El logotipo y el icono que despliega el menú se agrupan
+       para mostrarlos mejor en los dispositivos móviles -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse"
+            data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Desplegar navegación</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#" style="color:black;">GiveRecive</a>
+  </div>
+ 
+  <!-- Agrupar los enlaces de navegación, los formularios y cualquier
+       otro elemento que se pueda ocultar al minimizar la barra -->
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+   
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="/repositorio" style="color:black;">Donaciones</a></li>
+      <li><a href="/reposolicitud" style="color:black;">Solicitudes</a></li>
+      <li><a href="#" style="color:black;">Perfil</a></li>
+      <li><a style="color:black;">Notificaciones</a></li>
+      <li><a href="#" style="color:black;">Perfil</a></li>
+      <li><a href="#" style="color:black;">Logout</a></li>
+    </ul>
+  </div>
+</nav>
+    
+        
+    <div class="texto">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-12 col-lg-12">
+                    <h1>REPOSITORIO DE SOLICITUDES</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <div id="sidebar">
+        <ul id="ulSidebar">
+            <li id="ulSidebar"><a href="/solicitud" style="text-decoration:none;">Solicitar una medicina</a></li>
+            <li id="ulSidebar"><a href="#" style="text-decoration:none;">Buscar por ciudad</a></li>
+            <li id="ulSidebar"><a href="/buscar" style="text-decoration:none;">Buscar por nombre</a></li>
+            <li id="ulSidebar"><a href="#" style="text-decoration:none;">Transportar medicina</a></li>
+            <li id="ulSidebar"><a href="/donacion" style="text-decoration:none;"><span class="glyphicon glyphicon-heart" style="color: white;"></span> Donar</a></li>
+        </ul>
+        
+        <div id=sidebar-btn>
+        <span class="glyphicon glyphicon-align-justify"></span>
+        </div>
+        
+    </div>
+        
+    <div id="repository">
+        {#solicitud}
+           <div class="well">
+             <h4>{nombre} <button class="btn btn-default pull-right"  data-toggle="collapse" href="#solicitud_{id}" aria-expanded="false" aria-controls="solicitud_{id}"><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></button>
+             </h4>
+             <div class="collapse" id="solicitud_{id}">
+                 </br>
+                 </br>
+                 <p><strong>Nombre: </strong>{nombre}</p>
+                 <p><strong>Descripcion: </strong>{descripcion}</p>
+                 </br>
+                 <button class="btn btn-danger">Ayudar</button>
+              </div>
+         </div>
+        {/solicitud}
+    </div>
+        
+        <script src="/js/menu.js"></script>
+        <script src="/js/angular.min.js"></script>
+        <script src="/js/controlador.js"></script>
+       
+    </body>
+</html>

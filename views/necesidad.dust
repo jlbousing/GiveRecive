@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>GiveRecive</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" type="text/css" href="../css/field.css">
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex6-collapse">
+        <span class="sr-only">Desplegar navegación</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+   
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex6-collapse">
+      <ul class="nav navbar-nav navbar-right" id="menuText">
+          <li><a href="/repositorio" style="color:black;"><strong>Repositorio</strong></a></li>
+          <li><a href="#" style="color:black;"><strong>Mensajes</strong></a></li>
+          <li><a href="#" style="color:black;"><strong>Perfil</strong></a></li>
+          <li><a href="#" style="color:black;"><strong>Logout</strong></a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+   </nav>
+        
+    
+        <div class="container">
+            <h3 style="color: white;">Describa lo que necesite</h3>
+            <form method="post" action="/pedir">
+                <div class="row">
+                    <div class="col-xs-12 col-md-12 col-lg-12">
+                        <input type="text" id="inputText" placeholder="Nombre del producto" name="NombreProducto">
+                    </div>
+                </div>
+                </br>
+                <div class="row">
+                    <div class="col-xs-12 col-md-12 col-lg-12">
+                        <input type="text" id="inputText" placeholder="Descripción" name="descripcion" style="width: 350px;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-12 col-lg-12">
+                        <input type="text" id="inputText" placeholder="ciudad" name="Ciudad" style="width: 350px;">
+                    </div>
+                </br>
+                <div class="row">
+                    <div class="col-xs-12 col-md-12 col-lg-12">
+                        <input type="submit" class="btn btn-default" style="margin-top:100px;">
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+    </body>
+</html>

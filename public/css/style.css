@@ -1,0 +1,100 @@
+body{
+    font-family: "Helvetica Neue", Helvetica,Arial;
+    background-color: #01A9DB;
+}
+
+#sidebar{
+    background-color: #151718;
+    width: 200px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: -200px;
+    top: 30px;
+    color: #ccc;
+    transition: left 0.3s linear;
+    text-decoration: none;
+}
+
+#sidebar.visible{
+    left: 0px;
+    transition: left 0.3s linear;
+}
+
+#sidebar-btn{
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 15px;
+    cursor: pointer;
+    margin: 20px;
+    position: absolute;
+    top: 0px;
+    right: -60px;
+}
+
+#siderbar-btn span{
+    height: 100px;
+    background: #111;
+    margin-bottom: 5px;
+    display: block;
+}
+
+#sidebar-btn span:nth-child(2){
+    width: 75%;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+ul li{
+    list-style: none;
+    text-decoration: none;
+}
+
+#ulSidebar{
+    background-color:
+    color: white;
+    border-bottom: 1px solid #111;
+    display: block;
+    width: 180px;
+    padding: 10px;
+    text-decoration: none;
+    a:hoover
+}
+
+a:hover{
+    background-color: chocolate;
+}
+
+.navbar{
+    background-color: #01DF3A;
+    width: 100%;
+}
+
+#repository{
+    align-items: center;
+    text-align: center;
+    float: inherit;
+    right: 50%;
+}
+
+#item{
+    background-color: #D8D8D8;
+    border: 30px;
+    float: left;
+    color: black;
+    border-radius: 100px;
+    border: 2px solid #111;
+    left: 0px;
+    height: 100px; 
+}
+
+.texto{
+    color: white;
+    
+    margin-left: 30%;
+}
+
+
